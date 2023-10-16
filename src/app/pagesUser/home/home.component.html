@@ -1,0 +1,94 @@
+<!-- Navigation-->
+
+<!-- Header-->
+
+<body>
+	<header class="bg-dark py-5">
+		<div class="container px-4 px-lg-5 my-5">
+			<div class="text-center text-white">
+				<h1 class="display-4 fw-bolder">Shop in style</h1>
+				<p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+			</div>
+		</div>
+	</header>
+	<!-- Section-->
+	<section class="py-5">
+		<div class="container px-4 px-lg-5 mt-5">
+			<h1> Sản phẩm Gucci</h1>
+			<div class="row  gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+				<div class="col mb-5" *ngFor="let pro of productsgucci">
+
+					<div class="card card-hover h-100">
+						<!-- Product image-->
+						<img class="card-img-top" src="{{pro.image}}" alt="..." />
+						<!-- Product details (initially hidden) -->
+						<h5 class="fw-bolder">{{pro.name}}</h5>
+						<!-- Product price-->
+						<p class="card-text">
+							<b>{{pro.price}}đ</b>-<del><small>{{pro.originalprice}}đ</small></del>
+						</p>
+						<div class="card-body p-4 product-details">
+							<div class="text-center ">
+								<!-- Product name-->
+
+							</div>
+							<div class="text-center">
+								<a class="btn btn-danger" href="detail/{{pro.id}}">Chi tiết</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="pagination justify-content-center">
+					<ul class="pagination">
+						<li class="page-item" *ngFor="let page of totalPages; let i = index">
+							<a class="page-link" (click)="changePage(i)" href="javascript:void(0)">{{ i + 1 }}</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+	<hr style="width:1200px;margin: 0 auto;">
+	<div class="container px-4 px-lg-5 mt-5">
+		<h1> Sản phẩm Gucci</h1>
+		<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+			<div class="col mb-5" *ngFor="let pro of pagesProductsDoir">
+
+				<div class="card h-100">
+					<!-- Product image-->
+					<img class="card-img-top" src="{{pro.image}}" alt="..." />
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">{{pro.name}}</h5>
+							<!-- Product price-->
+							<p class="card-text">
+								<b>{{pro.price}}đ</b>-<del><small>{{pro.originalprice}}đ</small></del>
+							</p>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center"><a class="btn btn-danger " href="detail/{{pro.id}}">chi
+								tiết</a></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="pagination justify-content-center">
+		<ul class="pagination">
+			<li class="page-item" *ngFor="let page of totalPagesdoir; let u = index">
+				<a class="page-link" (click)="changdoir(u)">{{ u + 1 }}</a>
+			</li>
+		</ul>
+	</div>
+
+
+
+</body>

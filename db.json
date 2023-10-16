@@ -1,0 +1,537 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://ngockhanhstore.vn/wp-content/uploads/2023/04/GIAY-NAM-GUCCI-HOA-TIET-THEU-ONG-MAU-DEN-GNGC17-3-300x300.jpg",
+      "name": "GIÀY NAM GUCCI HỌA TIẾT THÊU ONG MÀU ĐEN GNGC17",
+      "price": "2.090.000",
+      "originalprice": "2.990.000",
+      "idcategory": "gucci",
+      "idsex": "nam"
+    },
+    {
+      "id": 3,
+      "image": "https://ngockhanhstore.vn/wp-content/uploads/2023/04/GIAY-NAM-GUCCI-HOA-TIET-THEU-ONG-MAU-DEN-GNGC17-3-300x300.jpg",
+      "name": "GIÀY NAM GUCCI HỌA TIẾT THÊU ONG TRẮNG GNGC06",
+      "price": "2.090.000",
+      "originalprice": "2.990.000",
+      "idcategory": "gucci",
+      "idsex": "nu"
+    },
+    {
+      "id": 4,
+      "image": "https://ngockhanhstore.vn/wp-content/uploads/2023/04/GIAY-NAM-GUCCI-NAU-HOA-TIET-DIEM-ONG-VANG-GNGC18-2-300x300.jpg",
+      "name": "GIÀY NAM DIOR BUỘC DÂY MÀU TRẮNG PHỐI XÁM HỌA TIẾT GÓT CHỮ LIKEAUTH GNDR01",
+      "price": "3.990.000",
+      "originalprice": "4.290.000",
+      "idcategory": "doir",
+      "idsex": "nam"
+    },
+    {
+      "id": 5,
+      "idcategory": "gucci",
+      "idsex": "nu",
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x900/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/09/giay-sneaker-nu-gucci-wmns-rhyton-mouth-print-552093-a9l00-9522-mau-trang-do-size-35-5-650d301d11644-22092023131141.jpg",
+      "name": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "price": "13.800.000 ",
+      "originalprice": "15.000.000 "
+    },
+    {
+      "id": 6,
+      "idcategory": "gucci",
+      "idsex": "nu",
+      "image": "https://cdn.vuahanghieu.com/unsafe/500x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/06/giay-cao-got-gucci-mid-heel-pump-with-horsebit-mau-den-648a97828feaa-15062023114554.jpg",
+      "name": "Giày Cao Gót Nữ Gucci Mid-Heel Pump With Horsebit Màu Đen Size 37",
+      "price": "11.050.000 ",
+      "originalprice": "14.500.000 "
+    },
+    {
+      "id": 7,
+      "idcategory": "gucci",
+      "idsex": "nu",
+      "image": "https://cdn.vuahanghieu.com/unsafe/500x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/06/giay-luoi-nu-gucci-leather-mid-heel-loafer-423559-dkhc0-9061-mau-trang-size-36-5-6492c3d57bbc7-21062023163309.jpg",
+      "name": "Giày Lười Nữ Gucci Leather Mid-Heel Loafer 423559 DKHC0 9061 Màu Trắng Kem Size 36.5x",
+      "price": "18.500.000",
+      "originalprice": "19.800.000 đ "
+    },
+    {
+      "id": 8,
+      "idcategory": "gucci",
+      "idsex": "nu",
+      "image": "https://cdn.vuahanghieu.com/unsafe/500x0/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/08/giay-luoi-nu-gucci-women-s-loafer-with-interlocking-g-624316-1w610-1066-mau-den-size-36-64cc665cc3b35-04082023094548.jpg",
+      "name": "Giày Lười Nữ Gucci Women's Loafer With Interlocking G 624316 1W610 1066 Màu Đen Size 36",
+      "price": "18.500.000 ",
+      "originalprice": "20.890.000 "
+    },
+    {
+      "id": 9,
+      "idcategory": "doir",
+      "idsex": "nu",
+      "image": "https://product.hstatic.net/200000456445/product/y.vn_products_giay-nu-dior-j-adior-slingback-pump-black-kcp919sem-s900_97c989a273834a4d838a3adacccb287b_grande.png",
+      "name": "Giày Nữ Dior J'Adior Slingback Pump 'Black'",
+      "price": "32,900,000 ",
+      "originalprice": "25.000.000 "
+    },
+    {
+      "id": 10,
+      "idcategory": "gucci",
+      "idsex": "nam",
+      "image": "https://ngockhanhstore.vn/wp-content/uploads/2023/04/GIAY-NAM-GUCCI-MAU-XANH-MIX-LOGO-CHU-DAY-BAN-BAN-LIKEAUTH-GNGC20-4.jpg",
+      "name": "GIÀY NAM GUCCI MÀU XANH MIX LOGO CHỮ DÂY BẢN BẨN LIKEAUTH GNGC20",
+      "price": "2.990.000   ",
+      "originalprice": "2.190.000 "
+    },
+    {
+      "id": 11,
+      "idcategory": "gucci",
+      "idsex": "nam",
+      "image": "https://ngockhanhstore.vn/wp-content/uploads/2023/05/giay-nam-gucci-mau-be-phoi-logo-xanh-soc-xanh-do-dinh-da-like-auth-1-300x300.jpg",
+      "name": "GIÀY NAM GUCCI MÀU BE PHỐI LOGO XANH SỌC XANH ĐỎ ĐÍNH ĐÁ LIKE AUTH GNGC22",
+      "price": "2.990.000   ",
+      "originalprice": "3.190.000 "
+    }
+  ],
+  "Contact": [
+    {
+      "id": 1,
+      "name": "minh",
+      "email": "minh@gmail.com",
+      "message": "vãi cả nội dung"
+    },
+    {
+      "name": "luong trần",
+      "email": "sdfsdfsdfsdfsdfsdfsd",
+      "id": 2
+    },
+    {
+      "name": "fdssfds",
+      "email": "minhluong03032002@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "luong trần1111",
+      "email": "minhluong030302@gmail.com1111",
+      "message": "wsdadasdasdad",
+      "id": 4
+    },
+    {
+      "name": "luong trần1111",
+      "email": "minhluong030302@gmail.com1111",
+      "message": "wsdadasdasdad",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "sex": [
+    {
+      "id": "nu",
+      "name": "đồ nữ"
+    },
+    {
+      "id": "nam",
+      "name": "đồ nam"
+    }
+  ],
+  "category": [
+    {
+      "id": "gucci",
+      "name": "hãng gucci"
+    },
+    {
+      "id": "dior",
+      "name": "hãng Dior"
+    }
+  ],
+  "users": [
+    {
+      "email": "luongtdph22515@fpt.edu.vn",
+      "password": "$2a$10$JQvJSM8LTWDBqev1TVPSTeVsCRwYvdD1okg2ZWAZ5vuwye2vhV3je",
+      "name": "dfsfdfsd",
+      "id": 1,
+      "role": 0
+    },
+    {
+      "email": "minhluong03032002@gmail.com",
+      "password": "$2a$10$aSA1f8X7Pnuf3WSzwfPqCu1aIlNwOXzvGrcV8H3/UfrIPOOWl8jGC",
+      "name": "minhluong",
+      "role": 1,
+      "id": 2
+    },
+    {
+      "email": "luongtdph225115@fpt.edu.vn",
+      "password": "$2a$10$PghCWuRkEBJn89.0cBFQ/eg5cj9x1LCa0S2D/Ro0oNcdGQuLTUCke",
+      "name": "minh",
+      "id": 3,
+      "role": 0
+    },
+    {
+      "email": "minh030302@gmail.com",
+      "password": "$2a$10$mZZSOe5WAqCAqLC9hY6Pl.XCw/jxJNhrLugYZ6o4AxIQau/3.WRFy",
+      "name": "luong",
+      "id": 4,
+      "role": 1
+    },
+    {
+      "email": "luongtdph030302@fpt.edu.vn",
+      "password": "$2a$10$4tyK0Lp.d5y1YdMhvGyT2eJopnFmL4YnF2wRKnGMwDs.W6qEoyuUm",
+      "name": "luong",
+      "id": 5
+    },
+    {
+      "email": "luongtdph03032002@fpt.edu.vn",
+      "password": "$2a$10$MU4.Ucqmi/GyyFPFcz3qauyeO4Drc8fFWAw0YMvzyOfwmc56xEw..",
+      "name": "luong",
+      "id": 6
+    },
+    {
+      "email": "minh03032002@gmail.com",
+      "password": "$2a$10$iOERbmsEmNlwLrEror1yt.z2UznCmUzHtWqT3SdkoYvDcDg4qZKQq",
+      "name": "minh",
+      "id": 7
+    },
+    {
+      "email": "minbuygy@gmail.com",
+      "password": "$2a$10$c/vhS//bF6Vg4603nmm73.2h6y4v96akkzbQOQdbEpmZ1fi2FNeVm",
+      "name": "luong",
+      "id": 8
+    },
+    {
+      "email": "name@gmail.com",
+      "password": "$2a$10$0wCQ9v2IgTd7B4iqhbCAKOso87B93XR8cNTQZzeha75x7lFtZxWbO",
+      "name": "sadad",
+      "id": 9
+    },
+    {
+      "email": "luong@gmail.com",
+      "password": "$2a$10$1U0/uCHUuxU8OmJ1dJWXDeEL2dU2ztMQjt4/qSE6PF5TO/dncQ5Hm",
+      "name": "luong",
+      "id": 10
+    },
+    {
+      "email": "luongtdph5@fpt.edu.vn",
+      "password": "$2a$10$k1m7zOQ9iY7ISwr9dto3hOCSGtrJ2qG/5A9XSV2Yk2IGde23gh4s2",
+      "name": "minhluong",
+      "id": 11
+    },
+    {
+      "email": "asjhjah@gmail.com",
+      "password": "$2a$10$kLOejUlK1GqFrE5PR9eny.x0hNkeJwV7SnmE2Uqb9Sw9FlVoi/2nO",
+      "name": "dfghjkl",
+      "id": 12
+    },
+    {
+      "email": "adsfgh@gmai.com",
+      "password": "$2a$10$uRxI9JIf/0lv0tHvazjHHePzH8d1L9th49q6IOmvOvRYidnmnj/9O",
+      "name": "àgudkjs",
+      "id": 13
+    },
+    {
+      "email": "luongtdp5@fpt.edu.vn",
+      "password": "$2a$10$.p3xcyVLycnP8DxgYcTzweHtnndMCW682/IPeEqHV0VrOO.NxWgBS",
+      "name": "luong",
+      "id": 14
+    },
+    {
+      "email": "luong5@fpt.edu.vn",
+      "password": "$2a$10$WQVTk36FY3xWoea5EDoNaOWkYN8EYfj9qAHILQifb2djYKdoqSVUa",
+      "name": "minh",
+      "id": 15
+    },
+    {
+      "email": "sfaafasdsada@gmail.com",
+      "password": "$2a$10$vJb45RxgCmY8vsecRCEYCOknzKI3.x0Kgzq9.dZTnxy3MqDRl2p6W",
+      "name": "sadad",
+      "id": 16
+    },
+    {
+      "email": "luongt5@fpt.edu.vn",
+      "password": "$2a$10$UR9XT4lbsNUAz6TRFv2nk.PRsyHdoEM9K6mpbt0mP4psmcUJl2Zqy",
+      "name": "luong1111",
+      "id": 17
+    },
+    {
+      "email": "luongtdph22512225@fpt.edu.vn",
+      "password": "$2a$10$.Mxb.E5Udx55lzMvnMhBvumI7LCd57Sxd/GB9R/t9BPdGO21OhCHa",
+      "name": "minh",
+      "id": 18
+    }
+  ],
+  "comments": [
+    {
+      "userid": "",
+      "useremail": "",
+      "username": "",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:26:13.471Z",
+      "productsId": 5,
+      "id": 1
+    },
+    {
+      "userid": "",
+      "useremail": "",
+      "username": "",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:27:23.438Z",
+      "productsId": 5,
+      "id": 2
+    },
+    {
+      "userid": "",
+      "useremail": "",
+      "username": "",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:28:01.368Z",
+      "productsId": 5,
+      "id": 3
+    },
+    {
+      "userid": "",
+      "useremail": "",
+      "username": "",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:28:17.012Z",
+      "productsId": 5,
+      "id": 4
+    },
+    {
+      "userid": 3,
+      "useremail": "",
+      "username": "",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:28:36.250Z",
+      "productsId": 5,
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "userid": 3,
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:30:16.516Z",
+      "productsId": 5,
+      "id": 7
+    },
+    {
+      "userid": 3,
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:31:01.289Z",
+      "productsId": 5,
+      "id": 8
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:31:18.544Z",
+      "productsId": 5,
+      "id": 9
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ăqdqewqeqweq",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:42:41.642Z",
+      "productsId": 5,
+      "id": 10
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ádadas",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:44:57.266Z",
+      "productsId": 5,
+      "id": 11
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ádadas",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:44:58.321Z",
+      "productsId": 5,
+      "id": 12
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "waewqe",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:52:03.954Z",
+      "productsId": 5,
+      "id": 13
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:53:08.971Z",
+      "productsId": 5,
+      "id": 14
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:53:33.036Z",
+      "productsId": 5,
+      "id": 15
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "sadsadasdadwssddddddddddddddddđ",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:53:41.734Z",
+      "productsId": 5,
+      "id": 16
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "aewwqdewq",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:53:55.962Z",
+      "productsId": 5,
+      "id": 17
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ewrwrw",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:55:40.410Z",
+      "productsId": 5,
+      "id": 18
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "wqrqrq",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:56:25.826Z",
+      "productsId": 5,
+      "id": 19
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ẻwrwqqqqr\n",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T05:59:24.472Z",
+      "productsId": 5,
+      "id": 20
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ádaasdad",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T06:07:15.985Z",
+      "productsId": 5,
+      "id": 21
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ăqeqe",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-14T06:07:41.782Z",
+      "productsId": 5,
+      "id": 22
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "sdadada",
+      "products": "GIÀY NAM DIOR BUỘC DÂY MÀU TRẮNG PHỐI XÁM HỌA TIẾT GÓT CHỮ LIKEAUTH GNDR01",
+      "createAt": "2023-10-14T06:07:52.699Z",
+      "productsId": 4,
+      "id": 23
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "sadasda",
+      "products": "GIÀY NAM DIOR BUỘC DÂY MÀU TRẮNG PHỐI XÁM HỌA TIẾT GÓT CHỮ LIKEAUTH GNDR01",
+      "createAt": "2023-10-14T06:08:55.670Z",
+      "productsId": 4,
+      "id": 24
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "ấdasd",
+      "products": "GIÀY NAM DIOR BUỘC DÂY MÀU TRẮNG PHỐI XÁM HỌA TIẾT GÓT CHỮ LIKEAUTH GNDR01",
+      "createAt": "2023-10-14T06:09:56.526Z",
+      "productsId": 4,
+      "id": 25
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "QWERTYU890-POIUYTR",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-16T05:59:23.757Z",
+      "productsId": 5,
+      "id": 26
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "WERWERWRWERWERWRWREWRWERWERWE",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-16T05:59:34.515Z",
+      "productsId": 5,
+      "id": 27
+    },
+    {
+      "userid": 3,
+      "useremail": "luongtdph225115@fpt.edu.vn",
+      "username": "minh",
+      "content": "luong trần\n",
+      "products": "Giày Sneaker Nữ Gucci WMNS Rhyton Mouth Print 552093-A9L00-9522 Màu Trắng Đỏ Size 37",
+      "createAt": "2023-10-16T06:01:32.516Z",
+      "productsId": 5,
+      "id": 28
+    }
+  ]
+}

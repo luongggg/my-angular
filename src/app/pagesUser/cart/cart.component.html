@@ -1,0 +1,24 @@
+<table class="table table-hover table-bordered">
+<thead>
+    <tr style="text-align: center;">
+        <th>thứ tự</th>
+        <th>name</th>
+        <th>image</th>
+        <th>price</th>
+        <th>category</th>
+        <th>sex</th>
+        <th> chức năng</th>
+    </tr>
+</thead>
+<tbody>
+    <tr style="text-align: center;" *ngFor="let cart of cartt, let i=index">
+        <td>{{i+1}}</td>
+        <td style="max-width: 200px;">{{cart.name}}</td>
+        <td><img style="max-width: 100px;height: 100px;" src="{{cart.image}}" alt=""></td>
+        <td>{{cart.price}}</td>
+        <td>{{cart.idcategory}}</td>
+        <td>{{cart.idsex}}</td>
+        <td><button class="btn btn-danger">xoá</button></td>
+    </tr>
+</tbody>
+</table>

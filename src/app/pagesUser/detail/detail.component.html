@@ -1,0 +1,97 @@
+<body>
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5 align-items-center my-5" *ngFor="let pro of detai ">
+            <div class="col-lg-7">
+                <img style="width:100%;" class="img-fluid rounded mb-4 mb-lg-0" src="{{pro.image}}" alt="..." />
+            </div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">{{pro.name}}</h1>
+                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
+                    but it makes a great use of the standard Bootstrap core components. Feel free to use this template
+                    for any project you want!</p>
+
+                <div style="display: flex;">
+                    <form action="" [formGroup]="soluong">
+                        <input type="number" class="form-control" formControlName="soluong" placeholder="số lượng"
+                            style="max-width: 120px;">
+                    </form>
+
+                    <button class="btn btn-danger" style="margin-left: 10px;" (click)="cart()">thêm giỏ hàng</button>
+                    <a class="btn btn-primary" style="margin-left: 10px;width: 100px;" href="#!">mua</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action-->
+        <div class="card text-white bg-secondary my-5 py-4 text-center">
+            <div class="card-body">
+                <h1>Các sản phẩm tương tự</h1>
+            </div>
+        </div>
+
+        <!-- Content Row-->
+
+        <div style="display:grid;grid-template-columns: 0.1fr 2.5fr 0.1fr; margin: 0 auto;">
+            <div>
+                <span class="material-symbols-outlined" (click)="sau()">
+                    chevron_left
+                </span>
+            </div>
+            <div>
+                <div class="" style="display: grid; grid-template-columns: 1fr 1fr 1fr;margin: 0 auto; ">
+                    <div *ngFor="let product of currentProduct" class="card" style="width: 18rem;">
+                        <img [src]="product.image" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">{{ product.price }}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span class="material-symbols-outlined" (click)="truoc()">
+                    chevron_right
+                </span>
+
+            </div>
+        </div>
+        <!-- comment -->
+        <div *ngIf="getLocalstora()===null">
+            <h1>bạn chưa đăng nhập để bình luận</h1>
+       
+
+        </div>
+        <div class="binhluan" style="margin-top: 100px; max-width: 100%;">
+           
+            <form *ngIf="getLocalstora() !==null" #frm1="ngForm" (ngSubmit)="onComment()" >
+                <h1>Bình Luận</h1>
+                <h4></h4>
+                  <div class="mb-3">
+                    <!-- <div *ngFor="let bl of binh_luan">
+                        <div><h1>{{bl.useremail}}</h1></div>
+                        <div>{{bl.username}}</div>
+                        <div>{{bl.content}}</div>
+        
+                    </div> -->
+                    <div class="media mb-4" *ngFor="let bl of binh_luan">
+                      
+                        <div class="media-body">
+                          <h4 class="mt-0">{{bl.useremail}}</h4>
+                        <p style="padding-left: 10px;">   {{bl.content}}</p>
+                        </div>
+                      </div>
+                    <textarea class="form-control" name="bl"[(ngModel)]="comment.content" placeholder="Content" id="" rows="3"></textarea>
+                  </div>
+               <input type="submit" value="Gửi" class="btn btn-dark">
+            </form>
+    
+        </div>
+
+
+    </div>
+   
+    <!-- Footer-->
+</body>

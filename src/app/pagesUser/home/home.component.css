@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.py-3{
+    margin: 0 auto;
+}
+.product-details {
+    display: none; /* Ẩn chi tiết sản phẩm ban đầu */
+    color: rgb(185, 185, 185);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Độ mờ ban đầu */
+    transition: opacity 0.3s, transform 0.3s; /* Hiệu ứng mờ và thay đổi kích thước mượt */
+  }
+  
+  .card:hover .product-details {
+    display: block; /* Hiển thị chi tiết sản phẩm khi hover */
+    opacity: 1; /* Hiển thị chi tiết sản phẩm mà không mờ đi */
+    transform: scale(1); /* Thay đổi kích thước để hiển thị */
+    
+  }
+  
+  .card-img-top {
+    transition: transform 0.3s; /* Hiệu ứng mượt khi hover lên hình ảnh */
+    width: 100%;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+    width: 100%;
+  }
+  

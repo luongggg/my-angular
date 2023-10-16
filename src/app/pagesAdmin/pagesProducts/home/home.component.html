@@ -1,0 +1,26 @@
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr style="text-align:center;margin: 0 auto ;">
+            <th>stt</th>
+            <th>name</th>
+            <th>price</th>
+            <th>image</th>
+            <th>sex</th>
+            <th><a href="/admin/createProducts"><button class="btn btn-primary">Thêm</button></a></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{products.name}}
+        <tr style="text-align:center;margin: 0 auto ;" *ngFor="let pro of products, let i=index">
+            <td>{{i+1}}</td>
+            <td style="width: 400px; ">{{pro.name}}</td>
+            <td><b>{{pro.price}} đ</b></td>
+            <td><img style="width:100px;height:100px ;" src="{{pro.image}}" alt=""></td>
+            <td>{{pro.idsex}}</td>
+            <td>
+               <a href="admin/update/{{pro.id}}"><button class="btn btn-success">sửa</button></a>
+               <button class="btn btn-warning" (click)="del(pro.id)">xóa</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

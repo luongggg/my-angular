@@ -1,0 +1,23 @@
+<body>
+    <form  action="" [formGroup]="formGroup" (ngSubmit)="loginn()" class="login">
+      <h1 class="animate__animated animate__bounce">Register</h1>
+        <p class="p">
+          <label for="login">Email:</label>
+          <input type="text" name="login"  formControlName="email" id="login" placeholder="name@example.com">
+        </p>
+        <p>
+          <label for="password">Username</label>
+          <input type="text" name="text" formControlName="name" id="text" placeholder="name">
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" name="password" formControlName="password" id="password" placeholder="4815162342">
+        </p>
+    
+        <p class="login-submit">
+          <button type="submit" class="login-button">Login</button>
+        </p>
+    
+        <p class="forgot-password"><a href="">Forgot your password?</a></p>
+      </form>
+</body>

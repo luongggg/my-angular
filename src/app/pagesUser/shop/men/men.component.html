@@ -1,0 +1,130 @@
+<body>
+  <div class="box">
+    <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search"[(ngModel)]="search" placeholder="Search..." />
+    </div>
+  </div>
+
+  <h1>Danh sách sản phẩm</h1>
+  <div>
+    <label>
+      Chọn sản phẩm:
+      
+    </label>
+    <select style="width: 100px;"[(ngModel)]="selectedProduct">
+      <option  value="tatca" >tất cả</option>
+      <option  value="loai1">gucci</option>
+      <option  value="loai2">doir</option>
+  
+    </select>
+  </div>
+  
+
+
+  <div class="container">
+
+
+    <!-- Sản phẩm 1 -->
+
+    <div *ngIf="selectedProduct ==='tatca'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let pro of searchproducts">
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text">${{pro.price}}đ - <del></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages, let i = index">
+            <a class="page-link" (click)="changePage(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!--khoong chon danh tra ve -->
+    <div *ngIf="selectedProduct ===''">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let pro of productssanpham">
+
+
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text"><b>${{pro.price}}đ</b> - <del><small> ${{pro.originalprice }}đ</small></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages, let i = index">
+            <a class="page-link" (click)="changePage(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="selectedProduct ==='loai1'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let gucci of productsgucci">
+          <img src="{{gucci.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{gucci.name}}</h5>
+            <p class="card-text">{{gucci.price}} - {{gucci.originalprice}} </p>
+            <a href="detail/{{gucci.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPagesgucci, let i = index">
+            <a class="page-link" (click)="changongucci(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div *ngIf="selectedProduct ==='loai2'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let doir of productsdoir">
+          <img src="{{doir.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{doir.name}}</h5>
+            <p class="card-text">{{doir.price}} - {{doir.originalprice}} </p>
+            <a href="detail/{{doir.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center" *ngFor="let pro of totalPagesdoir,let i= index">
+          <li class="page-item"><a class="page-link"(click)="changdoir(i)">{{i+1}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Sản phẩm 2 -->
+
+  </div>
+
+
+  <!-- Bootstrap JS và Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>

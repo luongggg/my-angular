@@ -1,0 +1,111 @@
+<body>
+
+  <h1>Danh sách sản phẩm</h1>
+  <div class="container" style="padding-left: 0;">
+    <div style="width: 120px;">
+      <label for="exampleDropdown">Chọn một tùy chọn:</label>
+      <select class="form-control" [(ngModel)]="onclick" id="exampleDropdown">
+        <option value="tatca">tất cả</option>
+        <option value="gucci">gucci</option>
+        <option value="doir">doir</option>
+      </select>
+    </div>
+    <div *ngIf="onclick ==='tatca'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+        <div class="card" style="width: 18rem; margin-left: 10px;" *ngFor="let pro of productsGirl">
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text">{{pro.price}}đ - <del></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages1, let i = index">
+            <a class="page-link" (click)="changgirl(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="onclick ===''">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let pro of productsGirl">
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text">${{pro.price}}đ - <del></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages1, let i = index">
+            <a class="page-link" (click)="changgirl(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="onclick ==='gucci'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let pro of productsGucci">
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text">${{pro.price}}đ - <del></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages2, let i = index">
+            <a class="page-link" (click)="changgucci(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="onclick ==='doir'">
+      <div style="display: grid;grid-template-columns:  1fr 1fr 1fr 1fr;">
+
+        <div class="card" style="width: 18rem;margin-left: 10px;" *ngFor="let pro of productsDoir">
+          <img src="{{pro.image}}" class="" alt="Sản phẩm 1">
+          <div class="card-body">
+            <h5 class="card-title">{{pro.name}}</h5>
+            <p class="card-text">${{pro.price}}đ - <del></del></p>
+            <a href="detail/{{pro.id}}" class="btn btn-primary">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <ul class=" pagination justify-content-center">
+          <li class="page-item" *ngFor="let page of totalPages3, let i = index">
+            <a class="page-link" (click)="changdoir(i)">{{i+1}}</a>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Bootstrap JS và Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
