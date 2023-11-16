@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
@@ -7,17 +8,31 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  products:any= '';
-  
-  constructor(private pro: ProductsService) {
-    this.pro.getproducts().subscribe((data:any) => {
-      // Assuming data is an array of objects with a 'name' property
-      this.products = data as any[];
-  
-      // Iterate over each product and log its name
-      // for (const product of this.products) {
-      //   console.log(product.name as any);
-      // }
+  products: any = '';
+  carrt: any = [];
+  soluong: any = '';
+
+  constructor(private pro: ProductsService, private cart: CartService) {
+    this.cart.getCart().subscribe(data => {
+      this.carrt = data;
+      this.carrt.forEach((data: any) => {
+        
+        this.soluong = this.Localstora()?.user.id === data.userid ? this.Localstora()?.user.id : 'Not Match';
+        
+        
+      })
+     
+      const a = this.carrt.filter((data: any) => data.userid === this.soluong)
+      this.carrt = a.length
+      console.log(this.carrt);
+      
+      
     });
+    
+  }
+
+  Localstora() {
+    if (!localStorage.getItem('token')) return null;
+    else return JSON.parse(localStorage.getItem('token') as string);
   }
 }

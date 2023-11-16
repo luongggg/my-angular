@@ -42,11 +42,12 @@ export class DetailComponent {
 
         //binh luan
         // laays taats ca comment theo id
-        this.commentt.getcommentId(this.productsId).subscribe((data: any) => {
-          this.binh_luan = data as any
+    
+        
+        this.commentt.getcommentId(this.detai.id).subscribe((data: any) => {
+          this.binh_luan = data as any          
           this.binh_luan.sort((a: any, b: any) => b.id - a.id)
-          console.log(this.binh_luan)
-          this.binh_luan.unshift(data)
+      
 
         })
 
@@ -90,18 +91,18 @@ export class DetailComponent {
 
   cart() {
 
+
     if (localStorage.getItem('token')) {
       // Lấy sản phẩm đầu tiên trong this.productsdetail
       const soluong = this.soluong.value.soluong
       // Lấy id người dùng từ local storage
       const userid = this.getLocalstorage()?.user.id || '';
-  
-
       const mergedArray = { ...this.detai, userid, soluong }
       console.log(mergedArray.id);
       
      this.giohang.addToCart(mergedArray)
-   this.giohang.addToCart(mergedArray).subscribe(data=>{ 
+     this.giohang.addToCart(mergedArray).subscribe(data=>{ 
+    const tb= window.confirm("bạn đã thêm giỏ hàng thành công")
       console.log(JSON.stringify(data));
       
       
@@ -146,6 +147,8 @@ export class DetailComponent {
 
     this.productname = this.detai.name
     this.productsId = this.detai.id
+  
+    
 
 
 
@@ -163,9 +166,6 @@ export class DetailComponent {
 
     this.commentt.postcomment(this.data).subscribe(data => {
       console.log(data);
-
-
-
     })
     
   }
