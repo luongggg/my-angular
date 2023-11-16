@@ -9,11 +9,15 @@ import { CartService } from 'src/app/services/cart.service';
 export class CartComponent {
   cartt:any=''
 constructor(private cart: CartService){
-  this.cart.getCart().subscribe(data =>
-    this.cartt= data,
-    
+  this.cart.getCart().subscribe((data ): any =>
+  console.log(data)
+  
+    // this.cartt= data 
     
   )
-  console.log(this.cart)
+  
 }
+
+
+
 }

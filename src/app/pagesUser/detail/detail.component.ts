@@ -9,6 +9,7 @@ import { RegisterComponent } from '../auth/register/register.component';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { BinhluanService } from 'src/app/services/binhluan.service';
 
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -20,41 +21,36 @@ export class DetailComponent {
   productsdetail: any = []  // Initialize as an empty array
   products: any[] = []; // Initialize
   sanphamchay: number = 0/// sản phẩm chạy hiện tại
-  detai: any = []
+  detai: any = ''
   binh_luan: any = ''
   // postdetail: any = []
 
-  constructor(private router:Router,private pro: ProductsService,  private cdRef: ChangeDetectorRef, private commentt: BinhluanService, private giohang: CartService, private fb: UntypedFormBuilder, private http: ActivatedRoute, private login: LoginComponent,) {
+
+  constructor(private router: Router, private pro: ProductsService, private commentt: BinhluanService, private giohang: CartService, private fb: UntypedFormBuilder, private http: ActivatedRoute, private login: LoginComponent,) {
     this.soluong = new UntypedFormGroup({
       soluong: new UntypedFormControl()
     });
     this.http.params.subscribe(({ id }) => {
       this.pro.getProductsId(id).subscribe(data => {
-        //   console.log(data);
-
-        const i = JSON.stringify(data)
-        //   console.log(data);
-
-        //  this.detai= data as string
-        // this.detai = [{ ...data, value }]
-        this.detai.push(data) as any
+        this.detai = data as any
         console.log(this.detai);
-        this.productsId = this.detai[0].id
-        this.productname = this.detai[0].name
-        console.log(this.binh_luan);
+        console.log(this.soluong);
+
+
+
 
 
         //binh luan
-           // laays taats ca comment theo id
-    this.commentt.getcommentId(this.productsId).subscribe((data: any) => {
-      this.binh_luan = data as any
-      this.binh_luan.sort((a: any, b: any) => b.id - a.id)
-      console.log(this.binh_luan)
-      this.binh_luan.unshift(data)
-      
-    })
-        
-      
+        // laays taats ca comment theo id
+        this.commentt.getcommentId(this.productsId).subscribe((data: any) => {
+          this.binh_luan = data as any
+          this.binh_luan.sort((a: any, b: any) => b.id - a.id)
+          console.log(this.binh_luan)
+          this.binh_luan.unshift(data)
+
+        })
+
+
 
 
       });
@@ -79,12 +75,13 @@ export class DetailComponent {
   }
 
   NgOnInit(): any {
+    this.onComment()
     // số lượng validate giỏ hàng
     this.soluong = this.fb.group({
       soluong: [1, Validators.required, Validators.min(1)]
     })
-   this.onComment()
-   
+
+
 
   }
 
@@ -93,23 +90,24 @@ export class DetailComponent {
 
   cart() {
 
-    // Lấy sản phẩm đầu tiên trong this.productsdetail
-    const productToAdd = this.detai;
-    const details = productToAdd
+    if (localStorage.getItem('token')) {
+      // Lấy sản phẩm đầu tiên trong this.productsdetail
+      const soluong = this.soluong.value.soluong
+      // Lấy id người dùng từ local storage
+      const userid = this.getLocalstorage()?.user.id || '';
+  
 
-    const soluong = this.soluong.value.soluong
-    // Lấy id người dùng từ local storage
-    const userId = this.getLocalstorage()?.user.id || '';
-    const mergedArray = [{ ...details, userId, soluong }];
-    const postdetails = JSON.stringify(mergedArray)
-    console.log(postdetails);
-
-    if (userId) {
-      // Thêm sản phẩm vào giỏ hàng của người dùng
-      this.giohang.addToCart(postdetails).subscribe((data: any) => {
-        alert('bạn đã thêm giỏ hàng thành công')
-      });
-
+      const mergedArray = { ...this.detai, userid, soluong }
+      console.log(mergedArray.id);
+      
+     this.giohang.addToCart(mergedArray)
+   this.giohang.addToCart(mergedArray).subscribe(data=>{ 
+      console.log(JSON.stringify(data));
+      
+      
+   })
+    } else {
+      const tb = window.confirm("bạn cần đăng nhập mới thêm được sản phẩm")
     }
 
   }
@@ -138,11 +136,19 @@ export class DetailComponent {
     else return JSON.parse(localStorage.getItem('token') as string)
   }
 
+
   onComment() {
-       // lấy iduser và tên user , email để đổ vào trên các biến bên trên đẫ khai báo
-   this.getLocalstora() !==null ? this.userId= this.getLocalstora().user.id : this.userId as any
-   this.getLocalstora() !==null ? this.useremail=this.getLocalstora().user.email: this.useremail as any
-   this.getLocalstora() !==null ? this.username= this.getLocalstora().user.name:this.username as any
+    // lấy iduser và tên user , email để đổ vào trên các biến bên trên đẫ khai báo
+    this.getLocalstora() !== null ? this.userId = this.getLocalstora().user.id : this.userId as any
+    this.getLocalstora() !== null ? this.useremail = this.getLocalstora().user.email : this.useremail as any
+    this.getLocalstora() !== null ? this.username = this.getLocalstora().user.name : this.username as any
+    // lấy id sản phẩm và tên sản phẩm trên detail mơi tìm được bên trên
+
+    this.productname = this.detai.name
+    this.productsId = this.detai.id
+
+
+
     this.data = {
       userid: this.userId,
       useremail: this.useremail,
@@ -157,15 +163,11 @@ export class DetailComponent {
 
     this.commentt.postcomment(this.data).subscribe(data => {
       console.log(data);
-   
+
+
 
     })
-       ///laays iduser && lấy username và email
-      //  console.log(this.detai[0]);
-       
-// return this.router.navigate([`detail/${this.detai[0].id}`])
-// cập lại trang để còn hiển thị bình luân mình vừa mới nhập
-// this.cdRef.detectChanges()
+    
   }
 
 }

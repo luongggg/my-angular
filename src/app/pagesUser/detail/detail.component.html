@@ -2,12 +2,12 @@
     <!-- Page Content-->
     <div class="container px-4 px-lg-5">
         <!-- Heading Row-->
-        <div class="row gx-4 gx-lg-5 align-items-center my-5" *ngFor="let pro of detai ">
+        <div class="row gx-4 gx-lg-5 align-items-center my-5" >
             <div class="col-lg-7">
-                <img style="width:100%;" class="img-fluid rounded mb-4 mb-lg-0" src="{{pro.image}}" alt="..." />
+                <img style="width:100%;" class="img-fluid rounded mb-4 mb-lg-0" src="{{detai.image}}" alt="..." />
             </div>
             <div class="col-lg-5">
-                <h1 class="font-weight-light">{{pro.name}}</h1>
+                <h1 class="font-weight-light">{{detai.name}}</h1>
                 <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it,
                     but it makes a great use of the standard Bootstrap core components. Feel free to use this template
                     for any project you want!</p>
@@ -15,7 +15,8 @@
                 <div style="display: flex;">
                     <form action="" [formGroup]="soluong">
                         <input type="number" class="form-control" formControlName="soluong" placeholder="số lượng"
-                            style="max-width: 120px;">
+                     value="{soluong}" style="max-width: 120px;">
+                        
                     </form>
 
                     <button class="btn btn-danger" style="margin-left: 10px;" (click)="cart()">thêm giỏ hàng</button>
@@ -80,7 +81,7 @@
                       
                         <div class="media-body">
                           <h4 class="mt-0">{{bl.useremail}}</h4>
-                        <p style="padding-left: 10px;">   {{bl.content}}</p>
+                        <p style="padding-left: 10px;">  {{bl.content}}</p>
                         </div>
                       </div>
                     <textarea class="form-control" name="bl"[(ngModel)]="comment.content" placeholder="Content" id="" rows="3"></textarea>
